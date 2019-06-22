@@ -1,2 +1,2 @@
 # AndroidDesignPattern
-about Android  design Pattern Learning
+1. Android Observer Design Pattern Demo
