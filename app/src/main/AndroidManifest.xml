@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".singletonpattern.SingleTonPatternTestActivity"></activity>
         <activity android:name=".functiontwo.FunctionTwoActivity" />
         <activity android:name=".functionone.FunctionOneActivity" />
         <activity android:name=".MainActivity">

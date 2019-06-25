@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.example.androiddesignpattern.functionone.FunctionOneActivity;
 import com.example.androiddesignpattern.functiontwo.FunctionTwoActivity;
+import com.example.androiddesignpattern.singletonpattern.SingleTonPatternTestActivity;
+import com.example.androiddesignpattern.singletonpattern.SingleTonVersionOne;
 
 /**
  * @author jere
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         functionOneBtn.setOnClickListener(this);
         Button functionTwoBtn = findViewById(R.id.function_two_btn);
         functionTwoBtn.setOnClickListener(this);
+        Button singleTonBtn = findViewById(R.id.single_ton_btn);
+        singleTonBtn.setOnClickListener(this);
     }
 
     @Override
@@ -36,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent secondIntent = new Intent(MainActivity.this, FunctionTwoActivity.class);
                 startActivity(secondIntent);
                 break;
+            case R.id.single_ton_btn:
+                Intent singleTonIntent = new Intent(MainActivity.this, SingleTonPatternTestActivity.class);
+                startActivity(singleTonIntent);
             default:
                 break;
         }

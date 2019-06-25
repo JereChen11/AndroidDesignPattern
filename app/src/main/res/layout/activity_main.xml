@@ -30,5 +30,18 @@
         app:layout_constraintTop_toBottomOf="@id/function_one_btn"
         />
 
+    <Button
+        android:id="@+id/single_ton_btn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="SingleTon Pattern:"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/function_two_btn"
+        />
+
 
 </android.support.constraint.ConstraintLayout>
