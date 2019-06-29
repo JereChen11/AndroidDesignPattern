@@ -1,4 +1,4 @@
-package com.example.androiddesignpattern.observerPattern.functionone;
+package com.example.androiddesignpattern.observerpattern.functionone;
 
 import android.os.Handler;
 

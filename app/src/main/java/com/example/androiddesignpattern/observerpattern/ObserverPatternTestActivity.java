@@ -1,4 +1,4 @@
-package com.example.androiddesignpattern.observerPattern;
+package com.example.androiddesignpattern.observerpattern;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.androiddesignpattern.R;
-import com.example.androiddesignpattern.observerPattern.functionone.FunctionOneActivity;
-import com.example.androiddesignpattern.observerPattern.functiontwo.FunctionTwoActivity;
+import com.example.androiddesignpattern.observerpattern.functionone.FunctionOneActivity;
+import com.example.androiddesignpattern.observerpattern.functiontwo.FunctionTwoActivity;
 
 /**
  * @author jere

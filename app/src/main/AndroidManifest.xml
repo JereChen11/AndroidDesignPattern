@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".observerPattern.ObserverPatternTestActivity"></activity>
+        <activity android:name=".factorypattern.FactoryPatternActivity"></activity>
+        <activity android:name=".observerpattern.ObserverPatternTestActivity" />
         <activity android:name=".singletonpattern.SingleTonPatternTestActivity" />
-        <activity android:name=".observerPattern.functiontwo.FunctionTwoActivity" />
-        <activity android:name=".observerPattern.functionone.FunctionOneActivity" />
+        <activity android:name=".observerpattern.functiontwo.FunctionTwoActivity" />
+        <activity android:name=".observerpattern.functionone.FunctionOneActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

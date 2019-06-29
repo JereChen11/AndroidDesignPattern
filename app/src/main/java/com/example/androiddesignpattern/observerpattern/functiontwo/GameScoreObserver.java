@@ -1,4 +1,4 @@
-package com.example.androiddesignpattern.observerPattern.functiontwo;
+package com.example.androiddesignpattern.observerpattern.functiontwo;
 
 /**
  * @author jere
