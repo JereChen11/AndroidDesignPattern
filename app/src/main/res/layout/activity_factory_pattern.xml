@@ -6,4 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".factorypattern.FactoryPatternActivity">
 
+    <Button
+        android:id="@+id/simple_factory_pattern_btn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Simple Factory Pattern"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<Button-->
+        <!--android:id="@+id/factory_function_pattern_btn"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:text="Factory Pattern"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textSize="25dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/simple_factory_pattern_btn" />-->
+
 </android.support.constraint.ConstraintLayout>
