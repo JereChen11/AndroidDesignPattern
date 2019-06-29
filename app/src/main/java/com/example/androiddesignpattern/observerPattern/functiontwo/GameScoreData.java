@@ -1,4 +1,4 @@
-package com.example.androiddesignpattern.functiontwo;
+package com.example.androiddesignpattern.observerPattern.functiontwo;
 
 import android.os.Handler;
 
@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author jere
  */
-public class GameScoreData implements GameScoreSubject{
+public class GameScoreData implements GameScoreSubject {
     private String mLakerTeamScore;
     private String mBostonTeamScore;
     private List<GameScoreObserver> mGameObserverList;
@@ -62,7 +62,7 @@ public class GameScoreData implements GameScoreSubject{
 
     @Override
     public void notifyAllObserver() {
-        for (GameScoreObserver gameScoreObserver: mGameObserverList) {
+        for (GameScoreObserver gameScoreObserver : mGameObserverList) {
             gameScoreObserver.scoreChanged(mLakerTeamScore, mBostonTeamScore);
         }
     }

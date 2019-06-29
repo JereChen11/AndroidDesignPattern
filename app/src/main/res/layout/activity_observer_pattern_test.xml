@@ -4,31 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".observerPattern.ObserverPatternTestActivity">
 
     <Button
-        android:id="@+id/observer_pattern_btn"
+        android:id="@+id/function_one_btn"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginTop="50dp"
-        android:text="Observer Pattern"
-        android:textAllCaps="false"
+        android:layout_marginTop="100dp"
+        android:text="Function 1:"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/single_ton_pattern_btn"
+        android:id="@+id/function_two_btn"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginTop="50dp"
-        android:text="SingleTon Pattern"
-        android:textAllCaps="false"
+        android:text="Function 2:"
         android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/observer_pattern_btn" />
-
+        app:layout_constraintTop_toBottomOf="@id/function_one_btn" />
 
 </android.support.constraint.ConstraintLayout>

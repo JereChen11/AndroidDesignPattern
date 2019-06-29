@@ -1,4 +1,4 @@
-package com.example.androiddesignpattern.functionone;
+package com.example.androiddesignpattern.observerPattern.functionone;
 
 import android.os.Handler;
 
@@ -15,7 +15,7 @@ public class UserData extends Observable {
         getNewDataFromRemote();
     }
 
-    private void getNewDataFromRemote(){
+    private void getNewDataFromRemote() {
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

@@ -1,7 +1,7 @@
-package com.example.androiddesignpattern.functiontwo;
+package com.example.androiddesignpattern.observerPattern.functiontwo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.example.androiddesignpattern.R;
@@ -9,7 +9,7 @@ import com.example.androiddesignpattern.R;
 /**
  * @author jere
  */
-public class FunctionTwoActivity extends AppCompatActivity implements GameScoreObserver{
+public class FunctionTwoActivity extends AppCompatActivity implements GameScoreObserver {
     private TextView mLakerTeamScoreTv;
     private TextView mBostonTeamScoreTv;
     private TextView mEspnReportTv;
@@ -33,7 +33,6 @@ public class FunctionTwoActivity extends AppCompatActivity implements GameScoreO
 
         mGameScoreData.setTwoTeamScores();
     }
-
 
 
     @Override
