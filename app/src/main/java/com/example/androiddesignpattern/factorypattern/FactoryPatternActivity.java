@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.androiddesignpattern.R;
+import com.example.androiddesignpattern.factorypattern.factorymethodpattern.FactoryMethodTestActivity;
 import com.example.androiddesignpattern.factorypattern.simplefactorypattern.SimpleFactoryPatternTestActivity;
 
 /**
@@ -21,21 +22,23 @@ public class FactoryPatternActivity extends AppCompatActivity implements View.On
 
         Button simpleFactoryPatternBtn = findViewById(R.id.simple_factory_pattern_btn);
         simpleFactoryPatternBtn.setOnClickListener(this);
-//        Button factoryPatternBtn = findViewById(R.id.factory_pattern_btn);
-//        factoryPatternBtn.setOnClickListener(this);
+        Button factoryPatternBtn = findViewById(R.id.factory_method_pattern_btn);
+        factoryPatternBtn.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.simple_factory_pattern_btn:
-                Intent simpleFactoryPatternIntent =
-                        new Intent(this, SimpleFactoryPatternTestActivity.class);
+                Intent simpleFactoryPatternIntent = new Intent(
+                        this, SimpleFactoryPatternTestActivity.class);
                 startActivity(simpleFactoryPatternIntent);
                 break;
-//            case R.id.factory_pattern_btn:
-//                //todo
-//                break;
+            case R.id.factory_method_pattern_btn:
+                Intent factoryMethodPatternIntent = new Intent(
+                        this, FactoryMethodTestActivity.class);
+                startActivity(factoryMethodPatternIntent);
+                break;
             default:
                 break;
         }
