@@ -1,39 +1,53 @@
 package com.example.androiddesignpattern.factorypattern.simplefactorypattern;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.androiddesignpattern.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @author jere
  */
 public class SimpleFactoryPatternTestActivity extends AppCompatActivity {
-    private List<String> menuList;
+    private TextView mMenuTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_factory_pattern_test);
 
-        menuList = new ArrayList<>();
-        Food pork = FoodFactory.getFoodByMenu("Pork");
-        menuList.add(pork.get());
-        Food fish = FoodFactory.getFoodByMenu("Fish");
-        menuList.add(fish.get());
-        Food cake = FoodFactory.getFoodByMenu("Cake");
-        menuList.add(cake.get());
+        mMenuTv = findViewById(R.id.menu_tv);
+        final EditText menuEt = findViewById(R.id.menu_et);
+        menuEt.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) {
+                    Food food = FoodFactory.getFoodByMenu(menuEt.getText().toString());
+                    displayMenuFood(food.get());
+                    hideKeyboard();
+                    return true;
+                }
+                return false;
+            }
+        });
+    }
 
-        String menuString = "";
-        for (String menu : menuList) {
-            menuString += menu + "\n";
+    private void displayMenuFood(String menuFoodString) {
+        mMenuTv.setText(menuFoodString);
+    }
+
+    private void hideKeyboard() {
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
-        TextView menuTv = findViewById(R.id.menu_tv);
-        menuTv.setText(menuString);
-
     }
 }

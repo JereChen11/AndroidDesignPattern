@@ -13,6 +13,6 @@ public class FoodFactory {
         } else if (menuName.equalsIgnoreCase("Fish")) {
             return new Fish();
         }
-        return new UnknownFood();
+        return new UnknownFood(menuName);
     }
 }
