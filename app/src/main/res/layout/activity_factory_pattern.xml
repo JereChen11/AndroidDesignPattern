@@ -30,4 +30,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/simple_factory_pattern_btn" />
 
+    <Button
+        android:id="@+id/abstract_pattern_btn"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:text="Abstract Factory Pattern"
+        android:textAllCaps="false"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/factory_method_pattern_btn" />
+
 </android.support.constraint.ConstraintLayout>

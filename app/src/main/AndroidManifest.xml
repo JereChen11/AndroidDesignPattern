@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".factorypattern.factorymethodpattern.FactoryMethodTestActivity"></activity>
+        <activity android:name=".factorypattern.abstracfactorypattern.AbstractFactoryPatternActivity"></activity>
+        <activity android:name=".factorypattern.factorymethodpattern.FactoryMethodTestActivity" />
         <activity android:name=".factorypattern.simplefactorypattern.SimpleFactoryPatternTestActivity" />
         <activity android:name=".factorypattern.FactoryPatternActivity" />
         <activity android:name=".observerpattern.ObserverPatternTestActivity" />
