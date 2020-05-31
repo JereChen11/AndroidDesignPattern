@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".proxypattern.staticProxy.rentHouseExample.RentHouseTestActivity"></activity>
-        <activity android:name=".proxypattern.dynamicProxy.DynamicProxyPatternTestActivity" />
+        <activity android:name=".proxypattern.staticProxy.rentHouseExample.RentHouseTestActivity" />
         <activity android:name=".proxypattern.staticProxy.StaticProxyPatternTestActivity" />
         <activity android:name=".proxypattern.ProxyPatternTestActivity" />
 
