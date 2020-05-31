@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".proxypattern.ProxyPatternTestActivity">
+
+    <Button
+        android:id="@+id/staticProxyPatternBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Static Proxy pattern"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/dynamicProxyPatternBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Dynamic Proxy pattern"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/testProxyPatternAIDLBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Proxy pattern AIDL Test"
+        android:textAllCaps="false" />
+
+</LinearLayout>

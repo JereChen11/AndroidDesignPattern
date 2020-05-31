@@ -9,7 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".factorypattern.abstracfactorypattern.AbstractFactoryPatternActivity"></activity>
+        <activity android:name=".proxypattern.dynamicProxy.DynamicProxyPatternTestActivity"></activity>
+        <activity android:name=".proxypattern.staticProxy.StaticProxyPatternTestActivity" />
+        <activity android:name=".proxypattern.ProxyPatternTestActivity" />
+
+        <service
+            android:name=".proxypattern.aidl.BankService"
+            android:process="jere.test.process">
+            <intent-filter>
+                <action android:name="com.example.androiddesignpattern.proxypattern.BankService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".proxypattern.aidl.ProxyPatternAIDLTestActivity" />
+        <activity android:name=".factorypattern.abstracfactorypattern.AbstractFactoryPatternActivity" />
         <activity android:name=".factorypattern.factorymethodpattern.FactoryMethodTestActivity" />
         <activity android:name=".factorypattern.simplefactorypattern.SimpleFactoryPatternTestActivity" />
         <activity android:name=".factorypattern.FactoryPatternActivity" />

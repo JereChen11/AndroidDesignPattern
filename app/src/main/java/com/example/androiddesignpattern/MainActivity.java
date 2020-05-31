@@ -8,6 +8,8 @@ import android.widget.Button;
 
 import com.example.androiddesignpattern.factorypattern.FactoryPatternActivity;
 import com.example.androiddesignpattern.observerpattern.ObserverPatternTestActivity;
+import com.example.androiddesignpattern.proxypattern.ProxyPatternTestActivity;
+import com.example.androiddesignpattern.proxypattern.aidl.ProxyPatternAIDLTestActivity;
 import com.example.androiddesignpattern.singletonpattern.SingleTonPatternTestActivity;
 
 /**
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         singleTonPatternBtn.setOnClickListener(this);
         Button factoryPatternBtn = findViewById(R.id.factory_pattern_btn);
         factoryPatternBtn.setOnClickListener(this);
+        Button proxyPatternBtn = findViewById(R.id.proxy_pattern_btn);
+        proxyPatternBtn.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +46,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.factory_pattern_btn:
                 Intent factoryPatternIntent = new Intent(this, FactoryPatternActivity.class);
                 startActivity(factoryPatternIntent);
+                break;
+            case R.id.proxy_pattern_btn:
+                Intent proxyPatternIntent = new Intent(this, ProxyPatternTestActivity.class);
+                startActivity(proxyPatternIntent);
                 break;
             default:
                 break;

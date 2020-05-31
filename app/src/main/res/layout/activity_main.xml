@@ -45,6 +45,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/single_ton_pattern_btn" />
 
+        <Button
+            android:id="@+id/proxy_pattern_btn"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:text="Proxy Pattern"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/factory_pattern_btn" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
